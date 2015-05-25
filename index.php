@@ -31,7 +31,7 @@
             form1.uname.readOnly = true;
             form1.uname.style.border = 'none';
 
-            
+
             var uname = form1.uname.value;
             var msg = form1.msg.value;
             var xmlhttp = new XMLHttpRequest();
