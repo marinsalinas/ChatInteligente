@@ -30,6 +30,8 @@
 
             form1.uname.readOnly = true;
             form1.uname.style.border = 'none';
+
+            
             var uname = form1.uname.value;
             var msg = form1.msg.value;
             var xmlhttp = new XMLHttpRequest();
@@ -40,6 +42,8 @@
                     document.getElementById('chatlogs').innerHTML = xmlhttp.responseText;
                 }
             };
+
+            form1.msg.value = '';
             xmlhttp.open('GET', 'insert.php?uname=' + uname + '&msg=' + msg, true);
             xmlhttp.send();
 
