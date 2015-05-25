@@ -34,7 +34,6 @@ function bad_wordcensor($txt)
 
 }
 
-
 mysql_query("INSERT INTO logs(`username`,`msg`) VALUES ('$uname','".bad_wordcensor($msg)."')");
 
 $result1= mysql_query("SELECT * FROM logs ORDER by id DESC");
