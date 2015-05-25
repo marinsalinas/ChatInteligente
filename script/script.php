@@ -1,10 +1,5 @@
 <?php
-
-include 'con.php';
-
-
-$uname = $_REQUEST['uname'];
-$msg = $_REQUEST['msg'];
+include '../php/con.php';
 
 
 function bad_wordcensor($txt)
@@ -34,25 +29,24 @@ function bad_wordcensor($txt)
 
 }
 
-
-mysql_query("INSERT INTO logs(`username`,`msg`) VALUES ('$uname','".bad_wordcensor($msg)."')");
-
-$result1= mysql_query("SELECT * FROM logs ORDER by id DESC");
-
-
-while($r = mysql_fetch_array($result1)){
-
-
-    echo $r['username']. ": ". $r['msg']."<br>";
-
-}
+/*$cad= bad_wordcensor($_POST["comments"]);
 
 
 
+$pos=strpos($cad,"[censurado");
+
+if($pos===false){
+    echo false;
+
+}else{
+    echo true;
+}*/
+
+echo "<br>".bad_wordcensor($_POST["comments"]);
 
 /**
  * Created by PhpStorm.
  * User: OscarGarciaRuiz
- * Date: 24/05/15
- * Time: 23:11
+ * Date: 18/05/15
+ * Time: 10:29
  */ 
