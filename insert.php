@@ -5,6 +5,8 @@ include 'con.php';
 
 $uname = $_REQUEST['uname'];
 $msg = $_REQUEST['msg'];
+$image= $_REQUEST['image'];
+
 
 
 function bad_wordcensor($txt)
@@ -16,7 +18,7 @@ function bad_wordcensor($txt)
         $sql = mysql_query("SELECT bad_word FROM bad_words WHERE SOUNDEX (bad_word) = SOUNDEX('$sp')");
 
         if (mysql_num_rows($sql) > 0) {
-            $repeat = mysql_query("SELECT * FROM  `bad_words` WHERE SOUNDEX (bad_word) = SOUNDEX('$sp')");
+            $repeat = mysql_query("SELECT * FROM  `bad_words`WHERE  `bad_word` =  '$sp'");
 
             if (!mysql_num_rows($repeat)) {
 
@@ -26,7 +28,6 @@ function bad_wordcensor($txt)
         }
 
     }
-
 
     $q = mysql_query("SELECT  `id` ,  `bad_word` ,  `replacement` ,  `repeat` FROM bad_words") or die (mysql_error());
 
@@ -52,7 +53,7 @@ function bad_wordcensor($txt)
 
 }
 
-mysql_query("INSERT INTO logs(`username`,`msg`) VALUES ('$uname','" . bad_wordcensor($msg) . "')");
+mysql_query("INSERT INTO logs(`username`,`msg`,`image`) VALUE ('$uname','" . bad_wordcensor($msg)." ','$image')") or die (mysql_error());
 
 $result1 = mysql_query("SELECT * FROM logs ORDER by id DESC");
 
@@ -63,7 +64,6 @@ while ($r = mysql_fetch_array($result1)) {
     echo $r['username'] . ": " . $r['msg'] . "<br>";
 
 }
-
 
 
 
