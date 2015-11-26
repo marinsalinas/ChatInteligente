@@ -52,6 +52,7 @@
             $.ajaxSetup({cache: false});
             setInterval(function () {
                 $('.chatlogs').load('logs.php');
+                $('div.panel-body')[0].scrollTop = $('div.panel-body')[0].scrollHeight
             }, 2000)
 
             $(document).keypress(function(e) {
