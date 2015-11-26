@@ -6,4 +6,4 @@
  * Time: 4:22 PM
  */
 $con = mysql_connect('localhost:3306','chat','chatint');
-mysql_select_db('chatinteligente+',$con);
+mysql_select_db('chatinteligente',$con);
