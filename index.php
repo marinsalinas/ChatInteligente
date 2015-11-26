@@ -63,6 +63,13 @@
 
         });
 
+        function runScript(e) {
+            if (e.keyCode == 13) {
+                submitChat();
+                return false;
+            }
+        }
+
     </script>
 
 </head>
@@ -101,7 +108,7 @@
                                 <input type="text" name="uname" id="uname" class="form-control input-sm"
                                        readonly/>
                                 <input type="text" id="message" name="msg" class="form-control input-sm"
-                                       placeholder="Type your message here..."/>
+                                       placeholder="Type your message here..." onkeypress="runScript(event)"/>
                                 <input type="text" name="image" id="image" hidden>
                         <span class="input-group-btn">
                             <a class="btn btn-warning btn-sm" id="btn-chat" href="#" onclick="submitChat()">
