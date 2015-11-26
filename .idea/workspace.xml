@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="26266c89-a53d-49df-b0b3-76cca5365d8d" name="Default" comment="Merge https://github.com/hozkarr/test&#10;&#10;# Conflicts:&#10;#&#9;homeinsted/index.php&#10;#&#9;homeinsted/php/dbconnect.php&#10;#&#9;homeinsted/test.php&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conn.php" afterPath="$PROJECT_DIR$/conn.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs.php" afterPath="$PROJECT_DIR$/logs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ChatInteligente.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logs.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logs.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.10273973">
+            <state vertical-scroll-proportion="-1.875">
               <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding>
                 <marker date="1448556213000" expanded="true" signature="53:89" placeholder="SELECT * FRO..logs..." />
@@ -84,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conn.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="conn.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.2739726">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,8 +108,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/insert.php" />
-        <option value="$PROJECT_DIR$/conn.php" />
         <option value="$PROJECT_DIR$/logs.php" />
+        <option value="$PROJECT_DIR$/conn.php" />
       </list>
     </option>
   </component>
@@ -547,14 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="43.625">
@@ -592,7 +582,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logs.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10273973">
+        <state vertical-scroll-proportion="-1.875">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding>
             <marker date="1448556213000" expanded="true" signature="53:89" placeholder="SELECT * FRO..logs..." />
@@ -602,6 +592,14 @@
             <marker date="1448556213000" expanded="true" signature="441:587" placeholder="..." />
             <marker date="1448556213000" expanded="true" signature="549:572" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2739726">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
