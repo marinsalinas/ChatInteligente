@@ -55,11 +55,11 @@
                 $('div.panel-body')[0].scrollTop = $('div.panel-body')[0].scrollHeight
             }, 2000)
 
-            $(document).keypress(function(e) {
+            /*$(document).keypress(function(e) {
                 if(e.which == 13) {
                     submitChat();
                 }
-            });
+            });*/
 
         });
 
