@@ -228,7 +228,7 @@
         } else {
             console.log('signed out');
             helper.onSignInCallback(gapi.auth2.getAuthInstance());
-            location.reload();
+            //location.reload();
         }
     }
 
