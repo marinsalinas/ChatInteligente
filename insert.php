@@ -1,6 +1,6 @@
 <?php
 
-include 'con.php';
+include 'conn.php';
 
 
 $uname = $_REQUEST['uname'];
