@@ -4,7 +4,7 @@
 include 'conn.php';
 
 
-$result1= mysql_query("SELECT * FROM los ORDER by id  DESC ");
+$result1= mysql_query("SELECT * FROM los ORDER by id  ASC ");
 
 while($r = mysql_fetch_array($result1)){
 
