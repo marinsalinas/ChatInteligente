@@ -1,7 +1,7 @@
 
 
 <?php
-include 'con.php';
+include 'conn.php';
 
 
 $result1= mysql_query("SELECT * FROM logs ORDER by id  DESC ");
