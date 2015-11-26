@@ -22,7 +22,7 @@ function bad_wordcensor($txt)
 
             if (!mysql_num_rows($repeat)) {
 
-                mysql_query("INSERT INTO `google+`.`bad_words` (`id`, `bad_word`, `replacement`, `repeat`)
+                mysql_query("INSERT INTO `chatinteligente`.`bad_words` (`id`, `bad_word`, `replacement`, `repeat`)
         VALUES (NULL, '$sp','[censurado]', '0');") or die (mysql_error());
             }
         }
