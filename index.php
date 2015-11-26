@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Google+ JavaScript Quickstart</title>
     <script src="https://apis.google.com/js/client:platform.js?onload=startApp" async defer></script>
     <!-- JavaScript specific to this application that is not related to API
@@ -52,6 +53,13 @@
             setInterval(function () {
                 $('.chatlogs').load('logs.php');
             }, 2000)
+
+            $(document).keypress(function(e) {
+                if(e.which == 13) {
+                    alert('You pressed enter!');
+                }
+            });
+
         });
 
     </script>
