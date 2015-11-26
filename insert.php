@@ -42,7 +42,7 @@ function bad_wordcensor($txt)
             $count = substr_count($txt, $row_bad['bad_word']) + $row_bad['repeat'];
 
 
-            mysql_query("UPDATE  `google+`.`bad_words` SET  `repeat` =  '$count' WHERE  `bad_words`.`id` =" . $row_bad['id'] . ";") or die (mysql_error());
+            mysql_query("UPDATE  `chatinteligente`.`bad_words` SET  `repeat` =  '$count' WHERE  `bad_words`.`id` =" . $row_bad['id'] . ";") or die (mysql_error());
         }
 
         $txt = str_ireplace($row_bad['bad_word'], "[censurado]", $txt);
