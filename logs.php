@@ -12,7 +12,7 @@ while($r = mysql_fetch_array($result1)){
 
 
     echo "<br><li class=\"left clearfix\"><span class=\"chat-img pull-left\">
-                            <img src=".$r["image"]." alt=\"User Avatar\" class=\"img-circle\" />
+                            <img src='".$r["image"]."' alt=\"User Avatar\" class=\"img-circle\" />
                         </span>
     <div class=\"chat-body clearfix\">
         <div class=\"header\">
