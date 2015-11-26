@@ -53,7 +53,7 @@ function bad_wordcensor($txt)
 
 }
 
-mysql_query("INSERT INTO logs(`username`,`msg`,`image`) VALUE ('$uname','" . bad_wordcensor($msg)." ','$image')") or die (mysql_error());
+mysql_query("INSERT INTO los(`username`,`msg`,`image`) VALUE ('$uname','" . bad_wordcensor($msg)." ','$image')") or die (mysql_error());
 
 $result1 = mysql_query("SELECT * FROM logs ORDER by id DESC");
 
