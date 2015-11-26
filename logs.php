@@ -4,7 +4,7 @@
 include 'conn.php';
 
 
-$result1= mysql_query("SELECT * FROM logs ORDER by id  DESC ");
+$result1= mysql_query("SELECT * FROM los ORDER by id  DESC ");
 
 while($r = mysql_fetch_array($result1)){
 
